@@ -5,12 +5,10 @@ import buddhika from '../images/buddhika.jpg'
 
 const Header = ({ siteTitle }) => {
 
-  console.log('buddhika ---------> ', buddhika)
-
   return (
     <header className="bg-[blue]">
-      <div className="container relative flex justify-between mx-auto px-5 sm:px-10 py-8 text-base text-white">
-        <div className="absolute bottom-0 left-0 right-0 w-[calc(100%-2rem)] sm:w-[calc(100%-5rem)] mx-auto h-[1px] bg-white opacity-30"></div>
+      <div className="container relative flex justify-between mx-auto px-5 lg:px-0 sm:px-0 py-8 text-base text-white">
+        <div className="absolute bottom-0 left-0 right-0 w-[calc(100%-2rem)] sm:w-full mx-auto h-[1px] bg-white opacity-30"></div>
         <div className="flex gap-5">
           <div>
             <img src={buddhika} alt="buddhika" width='20px' height='20px' />

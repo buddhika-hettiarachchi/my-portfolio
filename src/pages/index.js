@@ -5,13 +5,15 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/Hero"
-import TechnologiesCarousel from "../components/TechnologiesCarousel"
+import Technologies from "../components/Technologies"
+import MyWork from "../components/MyWork"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Hero></Hero>
-    <TechnologiesCarousel></TechnologiesCarousel>
+    <Technologies></Technologies>
+    {/* <MyWork></MyWork> */}
   </Layout>
 )
 

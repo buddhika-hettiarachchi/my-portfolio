@@ -1,5 +1,4 @@
 import React from 'react';
-import TechnologyCat from './TechnologyCat';
 
 import angular from '../images/angular.svg'
 import react from '../images/react.svg'
@@ -15,11 +14,11 @@ import docker from '../images/docker.png'
 
 
 
-const TechnologiesCarousel = () => {
+const Technologies = () => {
     return (
         <div className='lg:container mx-auto py-20 text-center px-5 md:px-0 text-[#111828] z-10'>
             <div className='text-sm uppercase opacity-80 pb-8'>Expertise</div>
-            <div className=' text-2xl sm:text-4xl pb-10 '>The power of React. Put to work</div>
+            <div className=' text-3xl sm:text-4xl font-bold pb-20 '>The power of React. Put to work</div>
             <div className='flex flex-col md:flex-row justify-center items-center gap-5 md:gap-2 lg:gap-12'>
                 <div className='w-full flex flex-col justify-center max-w-sm  md:max-w-sm md:flex-1 h-[400px] bg-gradient-to-b from-[#f3f7fd] rounded '>
                     <div className='flex relative justify-center items-center overflow-hidden'>
@@ -78,4 +77,4 @@ const TechnologiesCarousel = () => {
     );
 }
 
-export default TechnologiesCarousel;
+export default Technologies;
