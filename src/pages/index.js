@@ -13,7 +13,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Hero></Hero>
     <Technologies></Technologies>
-    {/* <MyWork></MyWork> */}
+    <MyWork></MyWork>
   </Layout>
 )
 

@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fontsource/comfortaa": "^4.5.9",
     "@fontsource/inter": "^4.5.12",
     "@fontsource/open-sans": "^4.5.11",
     "gatsby": "^4.18.2",
