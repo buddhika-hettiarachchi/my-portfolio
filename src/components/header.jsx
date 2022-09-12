@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react"
 import PropTypes from "prop-types"
-
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import Lottie from "lottie-react";
 
 import hamburgerAnim from '../images/animations/hamburger.json'
@@ -45,14 +45,14 @@ const Header = ({ siteTitle }) => {
             {/* <div className="w-10 h-10 ">
             <img className="w-full h-full rounded-full" src={buddhika} alt="b"   />
           </div> */}
-            <div className="font-['Comfortaa'] text-xl font-bold "><span className="text-[#fcca3f] text-2xl font-extrabold">b</span>uddhika</div>
+            <div id="logo" className="font-['Comfortaa'] text-xl font-bold cursor-pointer" onClick={() => scrollTo('#hero')}><span className="text-[#fcca3f] text-2xl font-extrabold">b</span>uddhika</div>
           </div>
           <div className=" gap-8 justify-between items-center opacity-80 hidden sm:flex ">
             {/* <div>Skills</div> */}
             <div>Work</div>
             <div>Experience</div>
             <div>About</div>
-            <div>Contact</div>
+            <div className="cursor-pointer" onClick={() => scrollTo('#footer')}>Contact</div>
           </div>
           <div className="sm:hidden absolute top-2 right-4 z-50  h-12 w-12 overflow-hidden" onClick={onHamburgerClick}>
             <Lottie

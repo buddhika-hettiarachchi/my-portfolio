@@ -62,7 +62,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className="relative h-[calc(100vh-20rem)] min-h-[500px] flex justify-center items-center font-black text-3xl">
+        <div id='hero' className="relative h-[calc(100vh-20rem)] min-h-[500px] flex justify-center items-center font-black text-3xl">
             <div style={{
                 backgroundColor: 'blue'
             }} className="absolute inset-0">
