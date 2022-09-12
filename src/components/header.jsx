@@ -16,13 +16,23 @@ const Header = ({ siteTitle }) => {
   }
 
   useEffect(() => {
-    console.log("hamburgerRef==> ", hamburgerRef)
+
+    document.querySelector('main').addEventListener('click',() => {
+      setIsOpen(false)
+    })
+   
     if (isOpen) {
       hamburgerRef.current.playSegments([0, 19], true);
       setIsVisible('opacity-100	translate-x-0')
+      document.body.style.overflow = 'hidden'
+      document.querySelector('main').style.filter = 'blur(2px)'
+    
     } else {
       hamburgerRef.current.playSegments([20, 41], true);
-      setIsVisible('-translate-x-[1000px]')
+      setIsVisible('translate-x-[1000px]')
+      document.body.style.overflow = 'auto'
+      document.querySelector('main').style.filter = 'blur(0px)'
+    
     }
   }, [isOpen])
 
