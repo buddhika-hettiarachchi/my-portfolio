@@ -1,12 +1,13 @@
 import React, { useEffect, useState, useRef } from "react"
 import PropTypes from "prop-types"
-import '@lottiefiles/lottie-player';
-import { create } from '@lottiefiles/lottie-interactivity';
+
+import Lottie from "lottie-react";
+
 import hamburgerAnim from '../images/animations/hamburger.json'
 
 const Header = ({ siteTitle }) => {
 
-  const hamburgerRef = useRef(null)
+  const hamburgerRef = useRef()
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState('opacity-0 translate-x-80')
 
@@ -15,14 +16,12 @@ const Header = ({ siteTitle }) => {
   }
 
   useEffect(() => {
-    console.log("is open boolean valu e==> ", isOpen)
+    console.log("hamburgerRef==> ", hamburgerRef)
     if (isOpen) {
-      console.log('open true =======')
-      hamburgerRef.current.getLottie().playSegments([0, 19], true);
+      hamburgerRef.current.playSegments([0, 19], true);
       setIsVisible('opacity-100	translate-x-0')
     } else {
-      console.log('open false ==========')
-      hamburgerRef.current.getLottie().playSegments([20, 41], true);
+      hamburgerRef.current.playSegments([20, 41], true);
       setIsVisible('-translate-x-[1000px]')
     }
   }, [isOpen])
@@ -45,14 +44,14 @@ const Header = ({ siteTitle }) => {
             <div>About</div>
             <div>Contact</div>
           </div>
-          <div className="sm:hidden absolute top-3 right-3 z-50  h-10 w-10 overflow-hidden" onClick={onHamburgerClick}>
-            <lottie-player
-              ref={hamburgerRef} // 2. set the reference for the player
-              id="firstLottie"
-              mode="normal"
-              src="https://lottie.host/c1d48174-e05a-4fb4-91a3-dfc9be8ebb11/1Suv7QpUbY.json"
-              style={{ transform: 'scale(2.5)', width: '100%' }}
-            ></lottie-player>
+          <div className="sm:hidden absolute top-2 right-4 z-50  h-12 w-12 overflow-hidden" onClick={onHamburgerClick}>
+            <Lottie
+              rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
+              loop={false}
+              lottieRef={hamburgerRef}
+              animationData={hamburgerAnim}
+              style={{ transform: 'scale(0.8)', width: '100%', height: '100%' }}
+            ></Lottie>
           </div>
         </div>
       </header>
