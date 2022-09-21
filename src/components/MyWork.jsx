@@ -14,7 +14,7 @@ const MyWork = () => {
                     <div className=' text-3xl sm:text-4xl font-bold pb-20 '>The power of React. Put to work</div>
                 </div>
                 <div className='flex justify-center items-center flex-col gap-10 lg:gap-16 lg:flex-row'>
-                    <div className='w-full h-[600px] max-w-xl rounded flex-col '>
+                    <div className='w-full h-[600px] max-w-lg rounded flex-col '>
                         <div className='relative bg-gradient-to-b from-[#b8cff1] to-[#dfe9f9] rounded-t h-4/6'>
                             <div className='absolute z-10 inset-0 top-16 left-16 rounded-lg'>
                                 <img className='object-cover object-left-top h-full w-full' src={mopicClub} alt="chefscookeryclub" />
@@ -56,7 +56,7 @@ const MyWork = () => {
                         <div>
                         </div>
                     </div>
-                    <div className='w-full h-[600px] max-w-xl rounded flex-col'>
+                    <div className='w-full h-[600px] max-w-lg rounded flex-col'>
                         <div className=' w-full h-full lg:mt-72'>
                             <div className='relative bg-gradient-to-b from-[#97dfff] to-[#c4edff] rounded-t h-4/6'>
                                 <div className='absolute z-10 inset-0 top-16 left-16 rounded-lg'>
@@ -88,7 +88,7 @@ const MyWork = () => {
                     </div>
                 </div>
                 <div className='flex justify-center items-center flex-col gap-10 lg:gap-16 lg:flex-row mt-16'>
-                    <div className='w-full h-[600px] max-w-xl rounded flex-col'>
+                    <div className='w-full h-[600px] max-w-lg rounded flex-col'>
                         <div className='relative bg-gradient-to-b from-[#ffbd5f] to-[#ffd395] rounded-t h-4/6'>
                             <div className='absolute z-10 inset-0 top-16 left-16 rounded-lg'>
                                 <img className='object-cover object-left-top h-full w-full' src={bidspell} alt="chefscookeryclub" />
@@ -116,7 +116,7 @@ const MyWork = () => {
                         <div>
                         </div>
                     </div>
-                    <div className='hidden lg:block w-full h-[500px] max-w-xl'></div>
+                    <div className='hidden lg:block w-full h-[500px] max-w-lg'></div>
                 </div>
             </div>
         </div>
