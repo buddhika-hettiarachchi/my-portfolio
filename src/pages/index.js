@@ -10,6 +10,7 @@ import MyWork from "../components/MyWork"
 import Experiences from "../components/Experiences"
 import EmailContactForm from "../components/EmailContactForm"
 import Footer from "../components/Footer"
+import About from "../components/About"
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Technologies></Technologies>
     <MyWork></MyWork>
     <Experiences></Experiences>
+    <About></About>
     <Footer></Footer>
   </Layout>
 )

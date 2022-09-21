@@ -7,7 +7,7 @@ import bidspell from '../images/bidspell.svg'
 
 const MyWork = () => {
     return (
-        <div className='bg-gradient-to-b from-[#f3f7fd]'>
+        <div className='bg-[#f3f7fd]'>
             <div className='container py-24'>
                 <div className='flex flex-col gap-8 text-center'>
                     <div className='text-sm uppercase opacity-80'>Expertise</div>

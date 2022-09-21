@@ -103,7 +103,7 @@ const Experiences = () => {
   useEffect(() => {}, [offsetValue])
 
   return (
-    <div className="w-full px-5 pb-20">
+    <div className="w-full px-5 py-20" >
       <div className="container max-w-2xl py-5  flex flex-col items-center justify-center">
         <div className="text-sm uppercase opacity-80">experience</div>
         <div className=" mt-5 text-3xl sm:text-4xl font-bold pb-20 ">
