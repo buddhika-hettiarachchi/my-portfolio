@@ -10,6 +10,7 @@
     "@fontsource/inter": "^4.5.12",
     "@fontsource/open-sans": "^4.5.11",
     "email-js": "^2.0.2",
+    "formik": "^2.2.9",
     "gatsby": "^4.23.0",
     "gatsby-plugin-gatsby-cloud": "^4.23.0",
     "gatsby-plugin-image": "^2.23.0",

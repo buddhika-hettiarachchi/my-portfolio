@@ -1,5 +1,7 @@
 import React from "react"
 import buddhika from "../images/buddhika.jpg"
+import angularIcon from "../images/icons/angular.png"
+import bulletPoint from "../images/icons/bullet-point.png"
 
 const About = () => {
   return (
@@ -13,22 +15,44 @@ const About = () => {
           <div className=" flex flex-col-reverse md:flex-row">
             <div className="flex-1">
               <div className="w-1/2 m-auto md:w-5/6 md:ml-auto">
-                <img src={buddhika} alt="buddhika" />
+                <img className="" src={buddhika} alt="buddhika" />
               </div>
-              <div className="flex  py-20">
+              <div className="flex  py-20  pl-10">
                 <ul className="flex-1">
-                  <li>Anuglur</li>
-                  <li>Anuglur</li>
-                  <li>Anuglur</li>
-                  <li>Anuglur</li>
-                  <li>Anuglur</li>
+                  <li className="flex justify-start items-center gap-3">
+                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <div>JavaScript (ES6+)</div>
+                  </li>
+                  <li className="flex justify-start items-center gap-3">
+                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <div>TypeScript</div>
+                  </li>
+                  <li className="flex justify-start items-center gap-3">
+                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <div>Anuglur</div>
+                  </li>
+                  <li className="flex justify-start items-center gap-3">
+                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <div>React</div>
+                  </li>
                 </ul>
                 <ul className="flex-1">
-                  <li>Anuglur</li>
-                  <li>Anuglur</li>
-                  <li>Anuglur</li>
-                  <li>Anuglur</li>
-                  <li>Anuglur</li>
+                  <li className="flex justify-start items-center gap-3">
+                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <div>Node.js</div>
+                  </li>
+                  <li className="flex justify-start items-center gap-3">
+                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <div>TypeScript</div>
+                  </li>
+                  <li className="flex justify-start items-center gap-3">
+                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <div>Anuglur</div>
+                  </li>
+                  <li className="flex justify-start items-center gap-3">
+                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <div>React</div>
+                  </li>
                 </ul>
               </div>
             </div>
