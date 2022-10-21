@@ -8,9 +8,9 @@ import Hero from "../components/Hero"
 import Technologies from "../components/Technologies"
 import MyWork from "../components/MyWork"
 import Experiences from "../components/Experiences"
-import EmailContactForm from "../components/EmailContactForm"
 import Footer from "../components/Footer"
 import About from "../components/About"
+import BottomFooter from "../components/BottomFooter"
 
 const IndexPage = () => (
   <Layout>
@@ -21,6 +21,7 @@ const IndexPage = () => (
     <Experiences></Experiences>
     <About></About>
     <Footer></Footer>
+    <BottomFooter></BottomFooter>
   </Layout>
 )
 

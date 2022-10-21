@@ -1,6 +1,5 @@
 import React from "react"
 import buddhika from "../images/buddhika.jpg"
-import angularIcon from "../images/icons/angular.png"
 import bulletPoint from "../images/icons/bullet-point.png"
 
 const About = () => {
