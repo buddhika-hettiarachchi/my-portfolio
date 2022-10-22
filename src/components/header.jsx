@@ -40,7 +40,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <>
-      <header className="bg-[blue] sticky top-0 z-50  ">
+      <header className="bg-[blue] sticky top-0 z-50  md:px-10">
         <div className="container relative flex justify-between mx-auto px-5 lg:px-0 sm:px-0 py-5 text-base text-white">
           <div className="absolute bottom-0 left-0 right-0 w-[calc(100%-2rem)] sm:w-full mx-auto h-[1px] bg-white opacity-30"></div>
           <div className="flex gap-3 justify-center items-center">

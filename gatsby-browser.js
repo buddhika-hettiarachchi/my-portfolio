@@ -8,3 +8,4 @@
 import './src/styles/global.css'
 import "@fontsource/inter"
 import "@fontsource/comfortaa"
+import "@fontsource/poppins"

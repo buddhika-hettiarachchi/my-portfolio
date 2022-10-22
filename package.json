@@ -9,6 +9,7 @@
     "@fontsource/comfortaa": "^4.5.9",
     "@fontsource/inter": "^4.5.12",
     "@fontsource/open-sans": "^4.5.11",
+    "@fontsource/poppins": "^4.5.10",
     "email-js": "^2.0.2",
     "formik": "^2.2.9",
     "gatsby": "^4.23.0",
