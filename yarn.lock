@@ -3167,6 +3167,11 @@ camelcase-css@^2.0.1:
   resolved "https://registry.yarnpkg.com/camelcase-css/-/camelcase-css-2.0.1.tgz#ee978f6947914cc30c6b44741b6ed1df7f043fd5"
   integrity sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==
 
+camelcase@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-7.0.0.tgz#fd112621b212126741f998d614cbc2a8623fd174"
+  integrity sha512-JToIvOmz6nhGsUhAYScbo2d6Py5wojjNfoxoc2mEVLUdJ70gJK2gnd+ABY1Tc3sVMyK7QDPtN0T/XdlCQWITyQ==
+
 camelcase@^5.0.0, camelcase@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
@@ -5246,6 +5251,13 @@ gatsby-parcel-config@0.15.1:
     "@parcel/runtime-js" "2.6.2"
     "@parcel/transformer-js" "2.6.2"
     "@parcel/transformer-json" "2.6.2"
+
+gatsby-plugin-fix-fouc@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-fix-fouc/-/gatsby-plugin-fix-fouc-0.1.2.tgz#55f6bbe4e7e5d17ed2d78797ae26667f102e84ca"
+  integrity sha512-ISWQni7elGdrZw8wP+dKkb4JYKoSGMS0baQf0twcok8Xu7HAXgLRpYg1MOQrIl+dlD20hk10SiaBHOFPgEON9A==
+  dependencies:
+    camelcase "7.0.0"
 
 gatsby-plugin-gatsby-cloud@^4.23.0:
   version "4.24.1"
