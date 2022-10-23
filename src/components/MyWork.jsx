@@ -7,11 +7,11 @@ import bidspell from '../images/bidspell.svg'
 
 const MyWork = () => {
     return (
-        <div className='bg-[#f3f7fd]'>
+        <div className='bg-secondary text-primary-text'>
             <div className='container py-24'>
                 <div className='flex flex-col gap-8 text-center'>
-                    <div className='text-sm uppercase opacity-80'>Expertise</div>
-                    <div className=' text-3xl sm:text-4xl font-bold pb-20 '>The power of React. Put to work</div>
+                    <div className='text-sm text-ternary-text font-medium tracking-widest uppercase'>Projects</div>
+                    <div className=' text-3xl sm:text-4xl font-bold pb-20 '>Some Things I’ve Built</div>
                 </div>
                 <div className='flex justify-center items-center flex-col gap-10 lg:gap-16 lg:flex-row'>
                     <div className='w-full h-[600px] max-w-lg rounded flex-col '>
@@ -22,25 +22,25 @@ const MyWork = () => {
                         </div>
                         <div className='h-2/6 flex flex-col gap-3'>
                             <div className='flex gap-8 mt-5 text-sm'>
-                                <div>
+                                <div className='text-sm'>
                                     <span className='inline-block'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 mr-1">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
                                     </svg>
                                     </span>
                                     Angular
                                 </div>
-                                <div>
+                                <div className='text-sm'>
                                     <span className='inline-block'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 mr-1">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
                                     </svg>
                                     </span>
-                                    REST API
+                                    The Movie DB API
                                 </div>
                             </div>
                             <div className='text-xl font-bold'>
                                 Moving Picture Club
                             </div>
-                            <div>
+                            <div className='text-secondary-text'>
                                 Check out how I helped develop the front-end of a website that analyzes marketing and sales data in BigQuery
                             </div>
                             <div className='text-[blue]'>

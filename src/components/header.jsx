@@ -41,8 +41,8 @@ const Header = ({ siteTitle }) => {
 
   return (
     <>
-      <header className="bg-[blue] sticky top-0 z-50  md:px-10">
-        <div className="container relative flex justify-between mx-auto px-5 lg:px-0 sm:px-0 py-5 text-base text-white">
+      <header className="bg-[blue] sticky top-0 z-50  md:px-10 text-white">
+        <div className="container relative flex justify-between mx-auto px-5 lg:px-0 sm:px-0 py-5 text-base ">
           <div className="absolute bottom-0 left-0 right-0 w-[calc(100%-2rem)] sm:w-full mx-auto h-[1px] bg-white opacity-30"></div>
           <div className="flex gap-3 justify-center items-center">
             {/* <div className="w-10 h-10 ">
@@ -60,11 +60,11 @@ const Header = ({ siteTitle }) => {
               uddhika
             </div>
           </div>
-          <div className=" gap-8 justify-between items-center opacity-80 hidden sm:flex ">
+          <div className=" gap-8 justify-between items-center opacity-90 font-medium hidden sm:flex ">
             {/* <div>Skills</div> */}
-            <div>Work</div>
-            <div>Experience</div>
-            <div>About</div>
+            <div className="cursor-pointer">Work</div>
+            <div className="cursor-pointer">Experience</div>
+            <div className="cursor-pointer">About</div>
             <div className="cursor-pointer" onClick={() => scrollTo("#footer")}>
               Contact
             </div>
@@ -89,7 +89,7 @@ const Header = ({ siteTitle }) => {
           " bg-[blue] fixed top-0 right-0 bottom-0 z-20 sm:invisible w-[calc(60vw)]  transition-transform	 ease-in-out duration-500"
         }
       >
-        <div className="w-full h-full flex flex-col gap-5 justify-center items-center text-lg text-white">
+        <div className="w-full h-full flex flex-col gap-5 justify-center items-center text-lg text">
           <div>Work</div>
           <div>Experience</div>
           <div>About</div>
