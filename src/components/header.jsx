@@ -6,6 +6,7 @@ import Lottie from "lottie-react"
 import hamburgerAnim from "../images/animations/hamburger.json"
 
 const Header = ({ siteTitle }) => {
+  
   const hamburgerRef = useRef()
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState("opacity-0 translate-x-80")

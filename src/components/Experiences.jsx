@@ -100,16 +100,16 @@ const Experiences = () => {
     }
   }
 
-  useEffect(() => {}, [offsetValue])
+  useEffect(() => { }, [offsetValue])
 
   return (
-    <div className="w-full px-5 py-20" >
+    <div className="w-full py-20" >
       <div className="container max-w-2xl py-5  flex flex-col items-center justify-center">
         <div className="text-sm uppercase opacity-80">experience</div>
         <div className=" mt-5 text-3xl sm:text-4xl font-bold pb-20 ">
           Where I've worked
         </div>
-        <div className="relative  flex flex-col md:flex-row w-full h-[316px] md:h-full  overflow-hidden">
+        <div className="relative flex flex-col md:flex-row w-full h-[316px] md:h-full  overflow-hidden">
           <div className="w-full md:w-1 bg-[#f3f7fd]">
             <div
               ref={scrollRef}
@@ -120,7 +120,7 @@ const Experiences = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white py-2 md:py-0 md:bg-transparent absolute md:relative  flex  gap-0 md:gap-5 justify-between md:flex-col w-full md:w-[200px] z-10 overflow-auto">
+          <div className="hide-scroll-bar bg-white py-2 md:py-0 md:bg-transparent absolute md:relative  flex  gap-0 md:gap-5 justify-between md:flex-col w-full md:w-[200px] z-10 overflow-auto">
             <div className="absolute md:hidden top-[40px] h-1 z-50 w-[800px] md:w-1 bg-[#f3f7fd]">
               <div
                 ref={verticalScrollRef}
