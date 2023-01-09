@@ -1,5 +1,5 @@
 import React from "react"
-import buddhika from "../images/buddhika.jpg"
+import buddhika from "../images/buddhika.webp"
 import bulletPoint from "../images/icons/bullet-point.png"
 
 const About = () => {
@@ -20,7 +20,7 @@ const About = () => {
                 <ul className="flex-1">
                   <li className="flex justify-start items-center gap-3">
                     <img className="w-3 h-3" src={bulletPoint} alt="angular" />
-                    <div>JavaScript (ES6+)</div>
+                    <div>JavaScript</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
                     <img className="w-3 h-3" src={bulletPoint} alt="angular" />
@@ -38,19 +38,19 @@ const About = () => {
                 <ul className="flex-1">
                   <li className="flex justify-start items-center gap-3">
                     <img className="w-3 h-3" src={bulletPoint} alt="angular" />
-                    <div>Node.js</div>
+                    <div>Gatsby</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
                     <img className="w-3 h-3" src={bulletPoint} alt="angular" />
-                    <div>TypeScript</div>
+                    <div>Next</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
                     <img className="w-3 h-3" src={bulletPoint} alt="angular" />
-                    <div>Anuglur</div>
+                    <div>Nest</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
                     <img className="w-3 h-3" src={bulletPoint} alt="angular" />
-                    <div>React</div>
+                    <div>Node</div>
                   </li>
                 </ul>
               </div>

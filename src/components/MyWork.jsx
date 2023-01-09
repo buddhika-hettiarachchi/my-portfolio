@@ -1,8 +1,8 @@
 import React from 'react';
 
-import chefscookeryclub from '../images/chefscookeryclub.svg'
-import mopicClub from '../images/mopicClub.svg'
-import bidspell from '../images/bidspell.svg'
+import chefscookeryclub from '../images/chefscookeryclub.webp'
+import mopicClub from '../images/mopicClub.webp'
+import bidspell from '../images/bidspell.webp'
 
 
 const MyWork = () => {
