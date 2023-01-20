@@ -8,55 +8,56 @@ const About = () => {
       <div className="container max-w-5xl py-20 md:pb-32 lg:pb-20 px-5 md:px-16 m-auto">
         <div className=" text-center">
           <div className="text-sm uppercase opacity-80">About</div>
-          <div className=" text-3xl sm:text-4xl font-bold pb-20 ">
+          <div className=" text-3xl sm:text-4xl font-bold pb-12 lg:pb-20 ">
             about me description
           </div>
-          <div className=" flex flex-col-reverse md:flex-row">
+          <div className=" flex flex-col-reverse lg:flex-row ">
             <div className="flex-1">
-              <div className="w-1/2 m-auto md:w-5/6 md:ml-auto">
+              <div className="w-1/2 m-auto lg:w-5/6 lg:ml-auto">
                 <img className="" src={buddhika} alt="buddhika" />
               </div>
-              <div className="flex  py-20  pl-10">
+              <div className="lg:mr-16 lg:pl-5 my-5">Here are a few technologies I’ve been working with recently:</div>
+              <div className="flex w-11/12 sm:w-3/4 md:w-1/2 lg:w-3/4 m-auto sm:px-8 lg:px-0 lg:justify-center">
                 <ul className="flex-1">
                   <li className="flex justify-start items-center gap-3">
-                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <img className="w-5 h-5" src={bulletPoint} alt="angular" />
                     <div>JavaScript</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
-                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <img className="w-5 h-5" src={bulletPoint} alt="angular" />
                     <div>TypeScript</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
-                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <img className="w-5 h-5" src={bulletPoint} alt="angular" />
                     <div>Anuglur</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
-                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <img className="w-5 h-5" src={bulletPoint} alt="angular" />
                     <div>React</div>
                   </li>
                 </ul>
-                <ul className="flex-1">
+                <ul className="flex-1" >
                   <li className="flex justify-start items-center gap-3">
-                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <img className="w-5 h-5" src={bulletPoint} alt="angular" />
                     <div>Gatsby</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
-                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <img className="w-5 h-5" src={bulletPoint} alt="angular" />
                     <div>Next</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
-                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <img className="w-5 h-5" src={bulletPoint} alt="angular" />
                     <div>Nest</div>
                   </li>
                   <li className="flex justify-start items-center gap-3">
-                    <img className="w-3 h-3" src={bulletPoint} alt="angular" />
+                    <img className="w-5 h-5" src={bulletPoint} alt="angular" />
                     <div>Node</div>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="flex-1 relative">
-              <div className="block md:absolute md:w-[400px] lg:w-[500px] z-50 top-[100px] md:right-1 bg-white  p-8 md:p-10">
+            <div className="flex-1 relative lg:right-16 pt-8 bottom-8 lg:pt-16">
+              <div className=" lg:bg-white p-0 lg:p-12">
                 <div className="text-3xl">
                   Hello! My name is Brittany <br></br>and I enjoy creating
                   things that live on the internet.

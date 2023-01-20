@@ -60,7 +60,7 @@ const MyWork = () => {
                         <div className=' w-full h-full lg:mt-72'>
                             <div className='relative bg-gradient-to-b from-[#97dfff] to-[#c4edff] rounded-t h-4/6'>
                                 <div className='absolute z-10 inset-0 top-16 left-16 rounded-lg'>
-                                    <img className='object-cover object-left-top h-full w-full' src={chefscookeryclub} alt="chefscookeryclub" />
+                                    <img className='object-cover h-full w-full' src={chefscookeryclub} alt="chefscookeryclub" />
                                 </div>
                             </div>
                             <div className='h-2/6 flex flex-col gap-3'>
