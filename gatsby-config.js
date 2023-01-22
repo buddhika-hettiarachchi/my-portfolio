@@ -35,9 +35,16 @@ module.exports = {
     'gatsby-plugin-postcss',
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-preload-fonts`,
-    `gatsby-plugin-fix-fouc`
+    `gatsby-plugin-fix-fouc`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-zopfli',
+      options: {
+        extensions: ['css', 'html','js', 'jsx', 'svg','png', 'json', 'webp'],
+        path: 'zopfli'
+      }
+    }
   ],
 }
