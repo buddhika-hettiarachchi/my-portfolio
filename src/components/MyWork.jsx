@@ -7,7 +7,7 @@ import bidspell from '../images/bidspell.webp'
 
 const MyWork = () => {
     return (
-        <div className='bg-secondary text-primary-text'>
+        <div id="my-work" className='bg-secondary text-primary-text'>
             <div className='container py-24'>
                 <div className='flex flex-col gap-8 text-center'>
                     <div className='text-sm text-ternary-text font-medium tracking-widest uppercase'>Projects</div>

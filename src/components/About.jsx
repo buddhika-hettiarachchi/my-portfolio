@@ -4,7 +4,7 @@ import bulletPoint from "../images/icons/bullet-point.png"
 
 const About = () => {
   return (
-    <div className="bg-[#f3f7fd]">
+    <div id="about" className="bg-[#f3f7fd]">
       <div className="container max-w-5xl py-20 md:pb-32 lg:pb-20 px-5 md:px-16 m-auto">
         <div className=" text-center">
           <div className="text-sm uppercase opacity-80">About</div>

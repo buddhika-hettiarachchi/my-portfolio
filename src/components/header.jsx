@@ -6,10 +6,21 @@ import Lottie from "lottie-react"
 import hamburgerAnim from "../images/animations/hamburger.json"
 
 const Header = ({ siteTitle }) => {
-  
   const hamburgerRef = useRef()
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState("opacity-0 translate-x-80")
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false)
+    } else {
+      setVisible(true)
+    }
+    setPrevScrollPos(currentScrollPos)
+  }
 
   const onHamburgerClick = () => {
     setIsOpen(!isOpen)
@@ -20,6 +31,11 @@ const Header = ({ siteTitle }) => {
     document.body.style.overflow = "auto"
     document.querySelector("main").style.filter = "blur(0px)"
   }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll)
+  })
 
   useEffect(() => {
     document.querySelector("main").addEventListener("click", () => {
@@ -41,7 +57,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <>
-      <header className="bg-[blue] sticky top-0 z-50  md:px-10 text-white">
+      <header className={`bg-[blue]  z-50 fixed top-0 left-0 right-0 md:px-10 text-white ${visible ? 'opacity-1' : 'opacity-0'} transition-opacity ease-in-out duration-500`}>
         <div className="container relative flex justify-between mx-auto px-5 lg:px-0 sm:px-0 py-5 text-base ">
           <div className="absolute bottom-0 left-0 right-0 w-[calc(100%-2rem)] sm:w-full mx-auto h-[1px] bg-white opacity-30"></div>
           <div className="flex gap-3 justify-center items-center">
@@ -62,10 +78,10 @@ const Header = ({ siteTitle }) => {
           </div>
           <div className=" gap-8 justify-between items-center opacity-90 font-medium hidden sm:flex ">
             {/* <div>Skills</div> */}
-            <div className="cursor-pointer">Work</div>
-            <div className="cursor-pointer">Experience</div>
-            <div className="cursor-pointer">About</div>
-            <div className="cursor-pointer" onClick={() => scrollTo("#footer")}>
+            <div className="cursor-pointer" onClick={() => scrollTo("#my-work", "center")}>Work</div>
+            <div className="cursor-pointer" onClick={() => scrollTo("#experiences", "center")}>Experience</div>
+            <div className="cursor-pointer" onClick={() => scrollTo("#about", "center")}>About</div>
+            <div className="cursor-pointer" onClick={() => scrollTo("#footer", "center")}>
               Contact
             </div>
           </div>
@@ -97,7 +113,7 @@ const Header = ({ siteTitle }) => {
             className="cursor-pointer"
             onClick={() => {
               closeHamburgerMenu()
-              scrollTo("#footer")
+              scrollTo("#footer", "center")
             }}
           >
             Contact

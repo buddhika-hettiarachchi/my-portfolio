@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative h-[calc(100vh-20rem)] min-h-[500px] flex justify-center items-center font-black text-3xl md:px-10"
+      className="relative h-[600px] 2xl:h-[700px] min-h-[500px] flex justify-center items-center font-black text-3xl md:pt-20 md:px-10"
     >
       <div
         style={{
@@ -32,12 +32,12 @@ const Hero = () => {
         className="absolute inset-0"
       ></div>
       <div className="container p-0 flex flex-col sm:flex-row text-white z-10">
-        <div className="text-center sm:text-left px-5 lg:px-0 w-full xl:w-5/6 2xl:w-5/6">
+        <div className="text-center sm:text-left px-5 lg:px-0 w-full lg:w-3/4 2xl:w-5/6">
           <div className="text-sm uppercase tracking-widest">
             Buddhika Hettiarachchi, Front-end Developer
           </div>
           <div
-            className="text-4xl md:text-6xl py-8 leading-tight md:leading-tight tracking-normal
+            className="text-3xl md:text-5xl py-8 leading-tight md:leading-tight tracking-normal
 "
           >
             Specialized in creating sleek and premium user interfaces with the

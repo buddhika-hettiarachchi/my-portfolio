@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-
+import SocialMedia from "./SocialMedia"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -17,10 +17,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="relative">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <SocialMedia></SocialMedia>
       <main>{children}</main>
-    </>
+    </div>
   )
 }
 
