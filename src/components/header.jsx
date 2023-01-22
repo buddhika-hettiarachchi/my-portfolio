@@ -106,9 +106,21 @@ const Header = ({ siteTitle }) => {
         }
       >
         <div className="w-full h-full flex flex-col gap-5 justify-center items-center text-lg text">
-          <div>Work</div>
-          <div>Experience</div>
-          <div>About</div>
+          <div className="cursor-pointer"
+            onClick={() => {
+              closeHamburgerMenu()
+              scrollTo("#my-work", "start")
+            }}>Work</div>
+          <div className="cursor-pointer"
+            onClick={() => {
+              closeHamburgerMenu()
+              scrollTo("#experiences", "center")
+            }}>Experience</div>
+          <div className="cursor-pointer"
+            onClick={() => {
+              closeHamburgerMenu()
+              scrollTo("#about", "start")
+            }}>About</div>
           <div
             className="cursor-pointer"
             onClick={() => {
