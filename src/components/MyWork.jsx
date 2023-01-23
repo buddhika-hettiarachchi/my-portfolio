@@ -1,9 +1,5 @@
 import React from 'react';
-
-import chefscookeryclub from '../images/chefscookeryclub.webp'
-import mopicClub from '../images/mopicClub.webp'
-import bidspell from '../images/bidspell.webp'
-
+import { StaticImage } from "gatsby-plugin-image"
 
 const MyWork = () => {
     return (
@@ -16,8 +12,8 @@ const MyWork = () => {
                 <div className='flex justify-center items-center flex-col gap-10 lg:gap-16 lg:flex-row'>
                     <div className='w-full h-[600px] max-w-lg rounded flex-col '>
                         <div className='relative bg-gradient-to-b from-[#b8cff1] to-[#dfe9f9] rounded-t h-4/6'>
-                            <div className='absolute z-10 inset-0 top-16 left-16 rounded-lg'>
-                                <img className='object-cover object-left-top h-full w-full' src={mopicClub} alt="chefscookeryclub" />
+                            <div className='absolute z-10 inset-0 top-16 left-16 rounded-t-lg overflow-hidden'>
+                                <StaticImage quality='100' style={{height: "100%"}} objectFit='cover' objectPosition='top left' src="../images/mopicClub.webp" alt="mopicClub" placeholder="blurred"/>
                             </div>
                         </div>
                         <div className='h-2/6 flex flex-col gap-3'>
@@ -59,8 +55,8 @@ const MyWork = () => {
                     <div className='w-full h-[600px] max-w-lg rounded flex-col'>
                         <div className=' w-full h-full lg:mt-72'>
                             <div className='relative bg-gradient-to-b from-[#97dfff] to-[#c4edff] rounded-t h-4/6'>
-                                <div className='absolute z-10 inset-0 top-16 left-16 rounded-lg'>
-                                    <img className='object-cover h-full w-full' src={chefscookeryclub} alt="chefscookeryclub" />
+                                <div className='absolute z-10 inset-0 top-16 left-16 rounded-t-lg overflow-hidden '>
+                                    <StaticImage quality='100' style={{height: "100%"}} objectFit='cover'  objectPosition='top left' src="../images/chefscookeryclub.webp" alt="chefscookeryclub" placeholder="blurred"/>
                                 </div>
                             </div>
                             <div className='h-2/6 flex flex-col gap-3'>
@@ -90,8 +86,8 @@ const MyWork = () => {
                 <div className='flex justify-center items-center flex-col gap-10 lg:gap-16 lg:flex-row mt-16'>
                     <div className='w-full h-[600px] max-w-lg rounded flex-col'>
                         <div className='relative bg-gradient-to-b from-[#ffbd5f] to-[#ffd395] rounded-t h-4/6'>
-                            <div className='absolute z-10 inset-0 top-16 left-16 rounded-lg'>
-                                <img className='object-cover object-left-top h-full w-full' src={bidspell} alt="chefscookeryclub" />
+                            <div className='absolute z-10 inset-0 top-16 left-16 rounded-t-lg overflow-hidden'>
+                                <StaticImage quality='100' style={{height: "100%"}} objectFit='cover'  objectPosition='top left' src="../images/bidspell.webp" alt="bidspell" placeholder="blurred"/>
                             </div>
                         </div>
                         <div className='h-2/6 flex flex-col gap-3'>

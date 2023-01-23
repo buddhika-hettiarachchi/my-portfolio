@@ -1,5 +1,6 @@
 import React from "react"
-import buddhika from "../images/buddhika.webp"
+import { StaticImage } from "gatsby-plugin-image"
+
 import bulletPoint from "../images/icons/bullet-point.png"
 
 const About = () => {
@@ -14,7 +15,7 @@ const About = () => {
           <div className=" flex flex-col-reverse lg:flex-row ">
             <div className="flex-1">
               <div className="w-1/2 m-auto lg:w-5/6 lg:ml-auto">
-                <img className="" src={buddhika} alt="buddhika" />
+                <StaticImage quality='100' style={{height: "100%"}} objectFit='cover'  src="../images/buddhika.webp" alt="buddhika" placeholder="blurred"/>
               </div>
               <div className="lg:mr-16 lg:pl-5 my-5">Here are a few technologies I’ve been working with recently:</div>
               <div className="flex w-11/12 sm:w-3/4 md:w-1/2 lg:w-3/4 m-auto sm:px-8 lg:px-0 lg:justify-center">
