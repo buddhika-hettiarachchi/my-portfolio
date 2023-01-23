@@ -19,7 +19,9 @@ const Layout = ({ children }) => {
   return (
     <div className="relative">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <SocialMedia></SocialMedia>
+      <div className="hidden xl:block fixed z-50 top-64 right-3">
+        <SocialMedia orientation={'flex-col'}></SocialMedia>
+      </div>
       <main>{children}</main>
     </div>
   )

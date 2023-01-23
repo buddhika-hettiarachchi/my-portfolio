@@ -4,6 +4,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 import Lottie from "lottie-react"
 
 import hamburgerAnim from "../images/animations/hamburger.json"
+import SocialMedia from "./SocialMedia"
 
 const Header = ({ siteTitle }) => {
   const hamburgerRef = useRef()
@@ -105,7 +106,7 @@ const Header = ({ siteTitle }) => {
           " bg-[blue] fixed top-0 right-0 bottom-0 z-20 sm:invisible w-[calc(60vw)]  transition-transform	 ease-in-out duration-500"
         }
       >
-        <div className="w-full h-full flex flex-col gap-5 justify-center items-center text-lg text">
+        <div className="w-full h-full flex flex-col gap-5 justify-center items-center text-lg text-white">
           <div className="cursor-pointer"
             onClick={() => {
               closeHamburgerMenu()
@@ -130,6 +131,7 @@ const Header = ({ siteTitle }) => {
           >
             Contact
           </div>
+          <SocialMedia></SocialMedia>
         </div>
       </header>
     </>

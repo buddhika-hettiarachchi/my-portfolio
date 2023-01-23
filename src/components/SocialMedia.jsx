@@ -3,10 +3,10 @@ import linkedin from "../images/linkedin.png"
 import github from "../images/github.png"
 import gmail from "../images/gmail.png"
 
-export default function SocialMedia() {
+export default function SocialMedia({orientation = 'flex-row'}) {
   return (
-    <div className="hidden xl:block fixed z-50 top-64 right-3 bg-[#0000ff] px-3 py-3 rounded">
-      <ul className="flex flex-col gap-3">
+    <div className="bg-[#0000ff] px-3 py-3 rounded">
+      <ul className={`flex ${orientation} gap-3`}>
         <li className="w-6 h-6 cursor-pointer">
           <a href="https://www.linkedin.com/in/hpbuddhika" target="_blank">
             <img src={linkedin} alt="Linkedin" />
