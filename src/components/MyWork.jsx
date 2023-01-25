@@ -3,7 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import hashTag from "../images/icons/hashtag.svg"
 import link from "../images/icons/link.svg"
-import website from "../images/icons/website.svg"
 import github from "../images/icons/github.svg"
 
 const MyWork = () => {
