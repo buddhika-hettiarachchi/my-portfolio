@@ -11,10 +11,9 @@ const Experiences = () => {
   const itemClick = (id, e) => {
     switch (id) {
       case 1:
-        menuContentRef.current.classList.remove("-translate-y-[316px]")
-        menuContentRef.current.classList.remove("-translate-y-[632px]")
-        menuContentRef.current.classList.remove("-translate-y-[948px]")
-        menuContentRef.current.classList.remove("-translate-y-[1400px]")
+        menuContentRef.current.classList.remove("-translate-y-[500px]")
+        menuContentRef.current.classList.remove("-translate-y-[1000px]")
+        menuContentRef.current.classList.remove("-translate-y-[1500px]")
         menuContentRef.current.classList.add("-translate-y-[0px]")
 
         scrollRef.current.classList.remove("translate-y-[84px]")
@@ -32,10 +31,9 @@ const Experiences = () => {
         break
       case 2:
         menuContentRef.current.classList.remove("-translate-y-[0px]")
-        menuContentRef.current.classList.remove("-translate-y-[948px]")
-        menuContentRef.current.classList.remove("-translate-y-[632px]")
-        menuContentRef.current.classList.remove("-translate-y-[1400px]")
-        menuContentRef.current.classList.add("-translate-y-[316px]")
+        menuContentRef.current.classList.remove("-translate-y-[1500px]")
+        menuContentRef.current.classList.remove("-translate-y-[1000px]")
+        menuContentRef.current.classList.add("-translate-y-[500px]")
 
         scrollRef.current.classList.remove("translate-y-[0px]")
         scrollRef.current.classList.remove("translate-y-[168px]")
@@ -52,10 +50,9 @@ const Experiences = () => {
         break
       case 3:
         menuContentRef.current.classList.remove("-translate-y-[0px]")
-        menuContentRef.current.classList.remove("-translate-y-[316px]")
-        menuContentRef.current.classList.remove("-translate-y-[948px]")
-        menuContentRef.current.classList.remove("-translate-y-[1400px]")
-        menuContentRef.current.classList.add("-translate-y-[632px]")
+        menuContentRef.current.classList.remove("-translate-y-[500px]")
+        menuContentRef.current.classList.remove("-translate-y-[1500px]")
+        menuContentRef.current.classList.add("-translate-y-[1000px]")
 
         scrollRef.current.classList.remove("translate-y-[0px]")
         scrollRef.current.classList.remove("translate-y-[84px]")
@@ -72,10 +69,9 @@ const Experiences = () => {
         break
       case 4:
         menuContentRef.current.classList.remove("-translate-y-[0px]")
-        menuContentRef.current.classList.remove("-translate-y-[316px]")
-        menuContentRef.current.classList.remove("-translate-y-[632px]")
-        menuContentRef.current.classList.remove("-translate-y-[1400px]")
-        menuContentRef.current.classList.add("-translate-y-[948px]")
+        menuContentRef.current.classList.remove("-translate-y-[500px]")
+        menuContentRef.current.classList.remove("-translate-y-[1000px]")
+        menuContentRef.current.classList.add("-translate-y-[1500px]")
 
         scrollRef.current.classList.remove("translate-y-[0px]")
         scrollRef.current.classList.remove("translate-y-[84px]")
@@ -92,10 +88,9 @@ const Experiences = () => {
         break
       case 5:
         menuContentRef.current.classList.remove("-translate-y-[0px]")
-        menuContentRef.current.classList.remove("-translate-y-[316px]")
-        menuContentRef.current.classList.remove("-translate-y-[632px]")
-        menuContentRef.current.classList.remove("-translate-y-[948px]")
-        menuContentRef.current.classList.add("-translate-y-[1400px]")
+        menuContentRef.current.classList.remove("-translate-y-[500px]")
+        menuContentRef.current.classList.remove("-translate-y-[1000px]")
+        menuContentRef.current.classList.remove("-translate-y-[1500px]")
         break
     }
   }
@@ -103,14 +98,14 @@ const Experiences = () => {
   useEffect(() => { }, [offsetValue])
 
   return (
-    <div id="experiences" className="w-full py-20" >
-      <div className="container max-w-2xl py-5  flex flex-col items-center justify-center">
+    <div id="experiences" className="w-full py-20 ">
+      <div className="container max-w-4xl py-5  flex flex-col items-center justify-center">
         <div className="text-sm uppercase opacity-80">experience</div>
         <div className=" mt-5 text-3xl sm:text-4xl font-bold pb-20 ">
           Where I've worked
         </div>
-        <div className="relative flex flex-col md:flex-row w-full h-[316px] md:h-full  overflow-hidden">
-          <div className="w-full md:w-1 bg-[#f3f7fd]">
+        <div className="relative flex flex-col md:flex-row w-full h-[500px] overflow-hidden">
+          <div className="w-full md:h-[315px] md:w-1 bg-[#f3f7fd]">
             <div
               ref={scrollRef}
               className="relative hidden md:block w-full h-[64px] transition-transform	ease-in-out duration-300 bg-green-900"
@@ -120,7 +115,7 @@ const Experiences = () => {
               </div>
             </div>
           </div>
-          <div className="hide-scroll-bar bg-white py-2 md:py-0 md:bg-transparent absolute md:relative  flex  gap-0 md:gap-5 justify-between md:flex-col w-full md:w-[200px] z-10 overflow-auto">
+          <div className="hide-scroll-bar bg-white py-2 md:py-0 md:bg-transparent absolute md:relative  flex  gap-0 md:gap-5  md:flex-col w-full md:w-[200px] z-10 overflow-auto">
             <div className="absolute md:hidden top-[40px] h-1 z-50 w-[800px] md:w-1 bg-[#f3f7fd]">
               <div
                 ref={verticalScrollRef}
@@ -135,25 +130,25 @@ const Experiences = () => {
 
             <div
               onClick={e => itemClick(1, e)}
-              className="w-[200px] shrink-0  text-center md:text-left py-1 px-2 md:py-5 "
+              className="w-[200px] shrink-0  text-center md:text-left py-1 px-2 md:py-5 cursor-pointer"
             >
               Kognitiv Corporation
             </div>
             <div
               onClick={e => itemClick(2, e)}
-              className="w-[200px] shrink-0 text-center md:text-left  py-1  px-2 md:py-5"
+              className="w-[200px] shrink-0 text-center md:text-left  py-1  px-2 md:py-5 cursor-pointer"
             >
               Zone24x7
             </div>
             <div
               onClick={e => itemClick(3, e)}
-              className="w-[200px] shrink-0 text-center md:text-left  py-1  px-2 md:py-5"
+              className="w-[200px] shrink-0 text-center md:text-left  py-1  px-2 md:py-5 cursor-pointer"
             >
               Digital Micro Services{" "}
             </div>
             <div
               onClick={e => itemClick(4, e)}
-              className="w-[200px] shrink-0 text-center md:text-left  py-1  px-2 md:py-5"
+              className="w-[200px] shrink-0 text-center md:text-left  py-1  px-2 md:py-5 cursor-pointer"
             >
               Savantis Solutions
             </div>
@@ -166,85 +161,111 @@ const Experiences = () => {
             <div className="absolute inset-0">
               <div className=" h-full  pt-20 pl-5 md:pt-5">
                 <div className="">
-                  <div>
-                    Engineer <span>@Kognitiv Coporation </span>
+                  <div className="text-xl font-semibold mb-3">
+                    Front-End engineer<span className="text-[#0000ff] font-medium"> @Kognitiv Corporation</span>
                   </div>
-                  <div>May 2018 - Present</div>
-                  <ul className="mt-5 pl-5 list-disc text-sm">
+                  <div>October 2021 - Present</div>
+                  <ul className="mt-5 pl-5 list-disc text-xs sm:text-sm">
                     <li className="mb-3">
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                      Responsible for developing the entire admin dashboard for
+                      the report generation for multiple tenants. The dashboard
+                      was designed to work seamlessly with Tableau, a
+                      third-party service, to generate reports in real-time.
                     </li>
-                    <li>
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                    <li className="mb-3">
+                      Developed a significant portion of the admin dashboard for
+                      the affiliate management project. The dashboard enabled
+                      clients to configure one or more branded instances of the
+                      same website for a specific audience, loyalty tier, hotel,
+                      or sub-brand within a single commerce engine.
                     </li>
+                    <li className="mb-3">
+                      Developed a coupon generator web application for a hotel
+                      management system, which allowed clients to easily
+                      generate, validate, and distribute coupons to their
+                      clients.
+                    </li>
+                    <div className="font-medium">
+                      <span className="text-[#fa571c]">Skills: </span> NgRx · Redux · Angular 12 · Angular
+                      14 · React.js · MUI · TypeScript
+                    </div>
                   </ul>
                 </div>
               </div>
               <div className=" h-full  pt-20 pl-5 md:pt-5">
                 <div className="">
                   <div>
-                    Engineer <span>@Zone24x7</span>
+                    Full stack engineer<span>@Zone24x7</span>
                   </div>
-                  <div>May 2018 - Present</div>
-                  <ul className="mt-5 pl-5 list-disc text-sm">
+                  <div>March - September 2021</div>
+                  <ul className="mt-5 pl-5 list-disc text-xs sm:text-sm">
                     <li className="mb-3">
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                      Developed custom Enterprise Resource Planning (ERP)
+                      solutions using H5 SDK ( Infor M3 ) for an
+                      Industry-leading apparel manufacturer in Sri Lanka.
                     </li>
-                    <li>
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
-                    </li>
+                    <div>
+                      <span>Skills:</span> Angular 10 · NestJS 8 · Apollo
+                      GraphQL · Postgraphile · TypeORM · KendoUI for Angular ·
+                      Jest
+                    </div>
                   </ul>
                 </div>
               </div>
               <div className=" h-full  pt-20 pl-5 md:pt-5">
                 <div className="">
                   <div>
-                    Engineer <span>@Zone24x7</span>
+                    Associate Software Engineer
+                    <span>@Digital Micro Services</span>
                   </div>
-                  <div>May 2018 - Present</div>
-                  <ul className="mt-5 pl-5 list-disc text-sm">
+                  <div>May 2020 - February 2021 </div>
+                  <div>August 2019 - April 2020 </div>
+                  <ul className="mt-5 pl-5 list-disc text-xs sm:text-sm">
                     <li className="mb-3">
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                      Responsible for developing the main UI components and
+                      relevant APIs of a log management web application that is
+                      used for log analysis. Carried out UI and API testing.
                     </li>
                     <li className="mb-3">
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                      Added new UI features and made relevant backend API
+                      updates to a diagnostic process automation tool that is
+                      used for performing initial triage before dispatching
+                      customer tickets of an Australian telecommunication
+                      company. Conducted extensive UI and API testing.
                     </li>
-                    <li>
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
-                    </li>
+                    <div>
+                      <span>Skills:</span> CSS3 · Java EE · JAX-RS · Hibernate ·
+                      Katalon Studio · T4J · Angular 10 · HTML5 · Angular
+                      Material · TypeScript
+                    </div>
                   </ul>
                 </div>
               </div>
               <div className=" md:h-full  pt-20 pl-5 py-5 md:py-5 overflow-auto">
                 <div className="overflow-auto">
                   <div>
-                    Engineer <span>@Zone24x7</span>
+                    Engineering Intern{" "}
+                    <span className="text-blue-900">
+                      @Savantis Solutions LLC{" "}
+                    </span>
                   </div>
-                  <div>May 2018 - Present</div>
-                  <ul className="mt-5 pl-5 list-disc text-sm">
+                  <div>February - July 2019</div>
+                  <ul className="mt-5 pl-5 list-disc text-xs sm:text-sm">
                     <li className="mb-3">
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
-                    </li>
-                    <li className="mb-3">
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                      Added new features and made UI improvements to the cinema
+                      booking management application (USA). Identified bugs and
+                      submitted fixes.
                     </li>
                     <li className="mb-3">
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                      Quality assurance of an inventory management mobile
+                      application of a saloon network (USA). Carried out code
+                      reviews and User Acceptance Testing. Uncovered a major
+                      production bug.
                     </li>
-                    <li>
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
-                    </li>
+                    <div>
+                      <span>Skills:</span> Android Studio · Android SDK · Ionic
+                      Framework · JavaScript · Java
+                    </div>
                   </ul>
                 </div>
               </div>
