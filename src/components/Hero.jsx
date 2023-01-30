@@ -1,8 +1,10 @@
 import React, { useEffect, createRef, useState, useRef } from "react"
 import Typed from "typed.js"
-import Lottie from "lottie-web"
+import Lottie from "lottie-react"
+import downArrowAnim from "../images/animations/down-arrow.json"
 
 const Hero = () => {
+  const downArrowRef = useRef()
   const letterTypingContainer = createRef()
   const typed = useRef(null)
 
@@ -36,10 +38,7 @@ const Hero = () => {
           <div className="text-sm uppercase tracking-widest">
             Buddhika Hettiarachchi, Front-end Developer
           </div>
-          <div
-            className="text-3xl md:text-5xl py-8 leading-tight md:leading-tight tracking-normal
-"
-          >
+          <div className="text-3xl md:text-5xl py-8 leading-tight md:leading-tight tracking-normal">
             Specialized in creating sleek and premium user interfaces with the
             help of{" "}
             <span ref={letterTypingContainer} className="text-[yellow] "></span>
@@ -60,6 +59,15 @@ const Hero = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="block sm:hidden w-20 h-20 absolute bottom-0">
+        <Lottie
+          rendererSettings={{ preserveAspectRatio: "xMidYMid slice" }}
+          loop={true}
+          lottieRef={downArrowRef}
+          animationData={downArrowAnim}
+          style={{ width: "100%", height: "100%" }}
+        ></Lottie>
       </div>
     </div>
   )
