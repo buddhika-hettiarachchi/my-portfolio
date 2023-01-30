@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative h-[600px] 2xl:h-[700px] min-h-[500px] flex justify-center items-center font-black text-3xl md:pt-20 md:px-10"
+      className="relative h-screen sm:h-[600px] 2xl:h-[700px] min-h-[500px] flex justify-center items-center font-black text-3xl md:pt-20 md:px-10"
     >
       <div
         style={{
