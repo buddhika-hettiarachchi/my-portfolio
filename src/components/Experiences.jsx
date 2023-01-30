@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react"
 
+import arrow from "../images/icons/arrow.svg"
+
 const Experiences = () => {
   const menuContentRef = useRef(null)
   const scrollRef = useRef(null)
@@ -95,14 +97,18 @@ const Experiences = () => {
     }
   }
 
-  useEffect(() => { }, [offsetValue])
+  useEffect(() => {}, [offsetValue])
 
   return (
-    <div id="experiences" className="w-full py-20 ">
-      <div className="container max-w-4xl py-5  flex flex-col items-center justify-center">
-        <div className="text-sm uppercase opacity-80">experience</div>
-        <div className=" mt-5 text-3xl sm:text-4xl font-bold pb-20 ">
-          Where I've worked
+    <div id="experiences" className="w-full py-20 sm:py-0 sm:pt-20">
+      <div className="container max-w-4xl flex flex-col items-center justify-center">
+        <div className="flex flex-col gap-8 text-center">
+          <div className="text-sm text-ternary-text font-medium tracking-widest uppercase">
+            experience
+          </div>
+          <div className=" text-3xl sm:text-4xl font-bold pb-20  ">
+            Where I've worked
+          </div>
         </div>
         <div className="relative flex flex-col md:flex-row w-full h-[500px] overflow-hidden">
           <div className="w-full md:h-[315px] md:w-1 bg-[#f3f7fd]">
@@ -162,9 +168,14 @@ const Experiences = () => {
               <div className=" h-full  pt-20 pl-5 md:pt-5">
                 <div className="">
                   <div className="text-xl font-semibold mb-3">
-                    Front-End engineer<span className="text-[#0000ff] font-medium"> @Kognitiv Corporation</span>
+                    Front-End engineer{" "}
+                    <span className="text-[#0000ff] font-medium">
+                      @Kognitiv Corporation
+                    </span>
                   </div>
-                  <div>October 2021 - Present</div>
+                  <div className="text-xs sm:text-sm">
+                    October 2021 - Present
+                  </div>
                   <ul className="mt-5 pl-5 list-disc text-xs sm:text-sm">
                     <li className="mb-3">
                       Responsible for developing the entire admin dashboard for
@@ -186,40 +197,52 @@ const Experiences = () => {
                       clients.
                     </li>
                     <div className="font-medium">
-                      <span className="text-[#fa571c]">Skills: </span> NgRx · Redux · Angular 12 · Angular
-                      14 · React.js · MUI · TypeScript
+                      <span className="text-ternary-text">Skills: </span> NgRx ·
+                      Redux · Angular 12 · Angular 14 · React.js · MUI ·
+                      TypeScript
                     </div>
                   </ul>
                 </div>
               </div>
               <div className=" h-full  pt-20 pl-5 md:pt-5">
                 <div className="">
-                  <div>
-                    Full stack engineer<span>@Zone24x7</span>
+                  <div className="text-xl font-semibold mb-3">
+                    Full stack engineer{" "}
+                    <span className="text-[#0000ff] font-medium">
+                      @Zone24x7
+                    </span>
                   </div>
-                  <div>March - September 2021</div>
+                  <div className="text-xs sm:text-sm">
+                    March - September 2021
+                  </div>
                   <ul className="mt-5 pl-5 list-disc text-xs sm:text-sm">
                     <li className="mb-3">
                       Developed custom Enterprise Resource Planning (ERP)
                       solutions using H5 SDK ( Infor M3 ) for an
                       Industry-leading apparel manufacturer in Sri Lanka.
                     </li>
-                    <div>
-                      <span>Skills:</span> Angular 10 · NestJS 8 · Apollo
-                      GraphQL · Postgraphile · TypeORM · KendoUI for Angular ·
-                      Jest
+                    <div className="font-medium">
+                      <span className="text-ternary-text">Skills:</span> Angular
+                      10 · NestJS 8 · Apollo GraphQL · Postgraphile · TypeORM ·
+                      KendoUI for Angular · Jest
                     </div>
                   </ul>
                 </div>
               </div>
               <div className=" h-full  pt-20 pl-5 md:pt-5">
                 <div className="">
-                  <div>
-                    Associate Software Engineer
-                    <span>@Digital Micro Services</span>
+                  <div className="text-xl font-semibold mb-3">
+                    Associate Software Engineer{" "}
+                    <span className="text-[#0000ff] font-medium">
+                      @Digital Micro Services
+                    </span>
                   </div>
-                  <div>May 2020 - February 2021 </div>
-                  <div>August 2019 - April 2020 </div>
+                  <div className="text-xs sm:text-sm">
+                    May 2020 - February 2021{" "}
+                  </div>
+                  <div className="text-xs sm:text-sm">
+                    August 2019 - April 2020{" "}
+                  </div>
                   <ul className="mt-5 pl-5 list-disc text-xs sm:text-sm">
                     <li className="mb-3">
                       Responsible for developing the main UI components and
@@ -233,23 +256,23 @@ const Experiences = () => {
                       customer tickets of an Australian telecommunication
                       company. Conducted extensive UI and API testing.
                     </li>
-                    <div>
-                      <span>Skills:</span> CSS3 · Java EE · JAX-RS · Hibernate ·
-                      Katalon Studio · T4J · Angular 10 · HTML5 · Angular
-                      Material · TypeScript
+                    <div className="font-medium">
+                      <span className="text-ternary-text">Skills:</span> CSS3 ·
+                      Java EE · JAX-RS · Hibernate · Katalon Studio · T4J ·
+                      Angular 10 · HTML5 · Angular Material · TypeScript
                     </div>
                   </ul>
                 </div>
               </div>
               <div className=" md:h-full  pt-20 pl-5 py-5 md:py-5 overflow-auto">
                 <div className="overflow-auto">
-                  <div>
+                  <div className="text-xl font-semibold mb-3">
                     Engineering Intern{" "}
-                    <span className="text-blue-900">
+                    <span className="text-[#0000ff] font-medium">
                       @Savantis Solutions LLC{" "}
                     </span>
                   </div>
-                  <div>February - July 2019</div>
+                  <div className="text-xs sm:text-sm">February - July 2019</div>
                   <ul className="mt-5 pl-5 list-disc text-xs sm:text-sm">
                     <li className="mb-3">
                       Added new features and made UI improvements to the cinema
@@ -262,9 +285,9 @@ const Experiences = () => {
                       reviews and User Acceptance Testing. Uncovered a major
                       production bug.
                     </li>
-                    <div>
-                      <span>Skills:</span> Android Studio · Android SDK · Ionic
-                      Framework · JavaScript · Java
+                    <div className="font-medium">
+                      <span className="text-ternary-text">Skills:</span> Android
+                      Studio · Android SDK · Ionic Framework · JavaScript · Java
                     </div>
                   </ul>
                 </div>
