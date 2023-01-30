@@ -116,7 +116,7 @@ const EmailContactForm = () => {
             }[isLoading]
           }
           <form class="mt-6 " onSubmit={handleSubmit} ref={form}>
-            <div className="flex flex-col md:flex-row md:gap-5">
+            <div className="flex flex-col gap-5 md:flex-row">
               <div class="flex-1">
                 <label class="block mb-2 text-sm">Full Name</label>
                 <input

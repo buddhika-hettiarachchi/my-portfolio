@@ -1,7 +1,8 @@
-import React, { useEffect, createRef, useState, useRef } from "react"
+import React, { useEffect, createRef, useRef } from "react"
 import Typed from "typed.js"
 import Lottie from "lottie-react"
 import downArrowAnim from "../images/animations/down-arrow.json"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Hero = () => {
   const downArrowRef = useRef()
@@ -21,6 +22,10 @@ const Hero = () => {
     // elRef refers to the <span> rendered below
     typed.current = new Typed(letterTypingContainer.current, options)
   }, [])
+
+  const onContactClick = () => {
+    scrollTo("#footer", "center")
+  }
 
   return (
     <div
@@ -45,8 +50,11 @@ const Hero = () => {
             .
           </div>
           <div className="flex justify-center sm:justify-start gap-5">
-            <button className="text-sm bg-white text-[blue] px-5 py-3">
-              Selected Work
+            <button
+              className="text-sm bg-white text-[blue] px-5 py-3"
+              onClick={onContactClick}
+            >
+              Contact me
             </button>
             <button className="text-sm border border-white px-5 py-3">
               <a
@@ -60,7 +68,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="block sm:hidden w-20 h-20 absolute bottom-0">
+      <div className="block sm:hidden w-20 h-20 absolute bottom-10">
         <Lottie
           rendererSettings={{ preserveAspectRatio: "xMidYMid slice" }}
           loop={true}
