@@ -28,10 +28,10 @@ const EmailContactForm = () => {
           : loading,
     })
     setTimeout(() => {
-      if(isLoading == 'SUCCESS' || isLoading == "ERROR"){
+      if (isLoading == "SUCCESS" || isLoading == "ERROR") {
         setIsLoading(null)
       }
-    }, 2000);
+    }, 2000)
     return () => anim.destroy() // optional clean up for unmounting
   }, [isLoading])
 
@@ -115,34 +115,36 @@ const EmailContactForm = () => {
               ),
             }[isLoading]
           }
-          <form class="mt-6" onSubmit={handleSubmit} ref={form}>
-            <div class="flex-1">
-              <label class="block mb-2 text-sm">Full Name</label>
-              <input
-                placeholder="John Doe"
-                name="from_name"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.from_name}
-                class="block w-full px-5 py-3 mt-2   border border-gray-200 rounded-md  bg-[#f3f7fd]  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-              />
-              <div className="text-sm text-red-500 pt-0.5">
-                {errors.from_name && touched.from_name && errors.from_name}
+          <form class="mt-6 " onSubmit={handleSubmit} ref={form}>
+            <div className="flex flex-col md:flex-row md:gap-5">
+              <div class="flex-1">
+                <label class="block mb-2 text-sm">Full Name</label>
+                <input
+                  placeholder="John Doe"
+                  name="from_name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.from_name}
+                  class="block w-full px-5 py-3 mt-2   border border-gray-200 rounded-md  bg-[#f3f7fd]  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                />
+                <div className="text-sm text-red-500 pt-0.5">
+                  {errors.from_name && touched.from_name && errors.from_name}
+                </div>
               </div>
-            </div>
 
-            <div class="flex-1 mt-6">
-              <label class="block mb-2 text-sm">Email address</label>
-              <input
-                placeholder="johndoe@example.com"
-                name="reply_to"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.reply_to}
-                class="block w-full px-5 py-3 mt-2 border border-gray-200 rounded-md bg-[#f3f7fd]   focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-              />
-              <div className="text-sm text-red-500 pt-0.5">
-                {errors.reply_to && touched.reply_to && errors.reply_to}
+              <div class="flex-1">
+                <label class="block mb-2 text-sm">Email address</label>
+                <input
+                  placeholder="johndoe@example.com"
+                  name="reply_to"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.reply_to}
+                  class="block w-full px-5 py-3 mt-2 border border-gray-200 rounded-md bg-[#f3f7fd]   focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                />
+                <div className="text-sm text-red-500 pt-0.5">
+                  {errors.reply_to && touched.reply_to && errors.reply_to}
+                </div>
               </div>
             </div>
 
