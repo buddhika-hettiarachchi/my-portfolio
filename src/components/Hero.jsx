@@ -58,7 +58,7 @@ const Hero = () => {
             </button>
             <button className="text-sm border border-white px-5 py-3">
               <a
-                href={"./profile.pdf"}
+                href={"./Buddhika_Hettiarachchi_resume_2023.pdf"}
                 title="Download the Hello World file"
                 download
               >
