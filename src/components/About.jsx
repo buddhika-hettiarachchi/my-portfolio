@@ -18,15 +18,16 @@ const About = () => {
           </div>
           <div className=" flex flex-col-reverse lg:flex-row ">
             <div className="flex-1">
-              <div className="w-1/2 m-auto lg:w-5/6 lg:ml-auto">
+              <div className="group w-1/2 m-auto lg:w-5/6 lg:ml-auto relative border">
                 <StaticImage
                   quality="100"
-                  style={{ height: "100%" }}
+                  style={{ height: "100%", zIndex:'10' }}
                   objectFit="cover"
                   src="../images/buddhika.webp"
                   alt="buddhika"
                   placeholder="blurred"
                 />
+                <div className="absolute inset-0 bg-[#ffd190]  -translate-x-6 -translate-y-6 transition-all duration-500		 group-hover:-translate-x-4 group-hover:-translate-y-4 "></div>
               </div>
               <div className="lg:mr-16 lg:pl-5 my-5">
                 Here are a few technologies I’ve been working with recently:
@@ -76,7 +77,7 @@ const About = () => {
                   Specialized in creating sleek and premium user interfaces with
                   Cutting-Edge Front End Technologies.
                 </div>
-                <div className="">
+                <div className="mb-8 lg:mb-0">
                   I am a web developer with a passion for programming, sparked
                   in 2015 when I began learning a programming language. This led
                   me to the world of web development where I have gained
