@@ -40,16 +40,25 @@ const Hero = () => {
       ></div>
       <div className="container p-0 flex flex-col sm:flex-row text-white z-10">
         <div className="text-center sm:text-left px-5 lg:px-0 w-full lg:w-3/4 2xl:w-5/6">
-          <div className="text-sm uppercase tracking-widest">
+          <div data-sal="slide-up"
+            data-sal-duration="500"
+            data-sal-delay="100"
+            data-sal-easing="ease" className="text-sm uppercase tracking-widest">
             Buddhika Hettiarachchi, Front-end Developer
           </div>
-          <div className="text-3xl md:text-5xl py-8 leading-tight md:leading-tight tracking-normal">
+          <div data-sal="slide-up"
+            data-sal-duration="500"
+            data-sal-delay="200"
+            data-sal-easing="ease" className="text-3xl md:text-5xl py-8 leading-tight md:leading-tight tracking-normal">
             Specialized in creating sleek and premium user interfaces with the
             help of{" "}
             <span ref={letterTypingContainer} className="text-[yellow] "></span>
             .
           </div>
-          <div className="flex justify-center sm:justify-start gap-5">
+          <div data-sal="slide-right"
+            data-sal-duration="500"
+            data-sal-delay="500"
+            data-sal-easing="ease" className="flex justify-center sm:justify-start gap-5">
             <button
               className="text-sm bg-white text-[blue] px-5 py-3"
               onClick={onContactClick}

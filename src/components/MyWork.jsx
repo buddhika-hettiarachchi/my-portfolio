@@ -18,7 +18,10 @@ const MyWork = () => {
           </div>
         </div>
         <div className="flex justify-center items-center flex-col gap-8 md:gap-24 lg:gap-16 lg:flex-row pb-10">
-          <div className="w-full h-[900px] md:h-[600px] max-w-lg rounded flex-col ">
+          <div data-sal="slide-right"
+            data-sal-duration="500"
+            data-sal-delay="100"
+            data-sal-easing="ease" className="w-full h-[900px] md:h-[600px] max-w-lg rounded flex-col ">
             <div className="relative bg-gradient-to-b from-[#b8cff1] to-[#dfe9f9] rounded-t h-4/6">
               <div className="absolute z-10 inset-0 top-16 left-16 rounded-t-lg overflow-hidden">
                 <StaticImage
@@ -81,7 +84,10 @@ const MyWork = () => {
             </div>
             <div></div>
           </div>
-          <div className="w-full h-[800px] md:h-[600px] max-w-lg rounded flex-col">
+          <div data-sal="slide-left"
+            data-sal-duration="500"
+            data-sal-delay="600"
+            data-sal-easing="ease"  className="w-full h-[800px] md:h-[600px] max-w-lg rounded flex-col">
             <div className=" w-full h-full lg:mt-80">
               <div className="relative bg-gradient-to-b from-[#97dfff] to-[#c4edff] rounded-t h-4/6">
                 <div className="absolute z-10 inset-0 top-16 left-16 rounded-t-lg overflow-hidden ">
@@ -164,7 +170,10 @@ const MyWork = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col gap-40 sm:gap-28 lg:gap-16 lg:flex-row mt-16 ">
+        <div data-sal="slide-right"
+            data-sal-duration="500"
+            data-sal-delay="100"
+            data-sal-easing="ease"  className="flex justify-center items-center flex-col gap-40 sm:gap-28 lg:gap-16 lg:flex-row mt-16 ">
           <div className="w-full h-[700px] md:h-[600px] max-w-lg rounded flex-col">
             <div className="relative bg-gradient-to-b from-[#ffbd5f] to-[#ffd395] rounded-t h-4/6">
               <div className="absolute z-10 inset-0 top-16 left-16 rounded-t-lg overflow-hidden">

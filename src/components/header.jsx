@@ -79,10 +79,18 @@ const Header = ({ siteTitle }) => {
           </div>
           <div className=" gap-8 justify-between items-center opacity-90 font-medium hidden sm:flex ">
             {/* <div>Skills</div> */}
-            <div className="cursor-pointer" onClick={() => scrollTo("#my-work", "center")}>Work</div>
-            <div className="cursor-pointer" onClick={() => scrollTo("#experiences", "center")}>Experience</div>
-            <div className="cursor-pointer" onClick={() => scrollTo("#about", "center")}>About</div>
-            <div className="cursor-pointer" onClick={() => scrollTo("#footer", "center")}>
+            <div data-sal="slide-down"
+              data-sal-duration="400"
+              data-sal-easing="ease" className="cursor-pointer" onClick={() => scrollTo("#my-work", "center")}>Work</div>
+            <div data-sal="slide-down"
+              data-sal-duration="800"
+              data-sal-easing="ease" className="cursor-pointer" onClick={() => scrollTo("#experiences", "center")}>Experience</div>
+            <div data-sal="slide-down"
+              data-sal-duration="1200"
+              data-sal-easing="ease" className="cursor-pointer" onClick={() => scrollTo("#about", "center")}>About</div>
+            <div data-sal="slide-down"
+              data-sal-duration="1600"
+              data-sal-easing="ease" className="cursor-pointer" onClick={() => scrollTo("#footer", "center")}>
               Contact
             </div>
           </div>

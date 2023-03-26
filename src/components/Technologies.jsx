@@ -20,7 +20,9 @@ const Technologies = () => {
             <div className='text-sm text-ternary-text font-medium tracking-widest uppercase pb-8'>Expertise</div>
             <div className=' text-3xl text-primary-text sm:text-4xl font-bold pb-20 '>The power of Technologies. Put to work</div>
             <div className='flex flex-col md:flex-row justify-center items-center gap-5 md:gap-2 lg:gap-12'>
-                <div className='w-full flex flex-col justify-center max-w-sm  md:max-w-sm md:flex-1 h-[400px] bg-gradient-to-b from-[#f3f7fd] rounded '>
+                <div data-sal="slide-up"
+                    data-sal-duration="1200"
+                    data-sal-easing="ease" className='w-full flex flex-col justify-center max-w-sm  md:max-w-sm md:flex-1 h-[400px] bg-gradient-to-b from-[#f3f7fd] rounded '>
                     <div className='flex relative justify-center items-center overflow-hidden'>
                         <div className=' flex justify-center items-center  absolute -left-4 md:-left-6 w-24 h-24 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full bg-white shadow-xl shadow-[#eaf0fb]'>
                             <img className='w-20 h-20 md:w-16 md:h-16 lg:h-20 lg:w-20 ' src={react} alt="react" />
@@ -37,7 +39,9 @@ const Technologies = () => {
                         <div className='opacity-80 px-2'>I use top-notch technologies to create <br></br>an exceptional online presence for<br></br>your business.</div>
                     </div>
                 </div>
-                <div className='w-full flex flex-col justify-center max-w-sm  md:max-w-sm md:flex-1 h-[400px] bg-gradient-to-b from-[#f3f7fd] rounded '>
+                <div data-sal="slide-up"
+                    data-sal-duration="1600"
+                    data-sal-easing="ease" className='w-full flex flex-col justify-center max-w-sm  md:max-w-sm md:flex-1 h-[400px] bg-gradient-to-b from-[#f3f7fd] rounded '>
                     <div className='flex relative justify-center items-center overflow-hidden'>
                         <div className=' flex justify-center items-center  absolute -left-4 md:-left-6 w-24 h-24 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full bg-white shadow-xl shadow-[#eaf0fb]'>
                             <img className='w-16 h-16 md:w-16 md:h-16 lg:h-16 lg:w-16 ' src={angularMaterail} alt="angularMaterail" />
@@ -54,7 +58,9 @@ const Technologies = () => {
                         <div className='opacity-80 px-2'>With the help of the latest UI libraries.<br></br>I make sure that your website looks<br></br>modern and fresh</div>
                     </div>
                 </div>
-                <div className='w-full flex flex-col justify-center max-w-sm  md:max-w-sm md:flex-1 h-[400px] bg-gradient-to-b from-[#f3f7fd] rounded '>
+                <div data-sal="slide-up"
+                    data-sal-duration="1800"
+                    data-sal-easing="ease" className='w-full flex flex-col justify-center max-w-sm  md:max-w-sm md:flex-1 h-[400px] bg-gradient-to-b from-[#f3f7fd] rounded '>
                     <div className='flex relative justify-center items-center overflow-hidden'>
                         <div className=' flex justify-center items-center  absolute -left-4 md:-left-6 w-24 h-24 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full bg-white shadow-xl shadow-[#eaf0fb]'>
                             <img className='w-20 h-20 md:w-16 md:h-16 lg:h-20 lg:w-20 ' src={firebase} alt="firebase" />

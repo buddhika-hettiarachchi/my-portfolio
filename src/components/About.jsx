@@ -18,7 +18,7 @@ const About = () => {
           </div>
           <div className=" flex flex-col-reverse lg:flex-row ">
             <div className="flex-1">
-              <div className="group w-1/2 m-auto lg:w-5/6 lg:ml-auto relative border">
+              <div className="group w-1/2 m-auto lg:w-5/6 lg:ml-auto relative">
                 <StaticImage
                   quality="100"
                   style={{ height: "100%", zIndex:'10' }}
