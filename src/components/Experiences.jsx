@@ -110,7 +110,13 @@ const Experiences = () => {
             Where I've worked
           </div>
         </div>
-        <div className="relative flex flex-col md:flex-row w-full h-[500px] overflow-hidden">
+        <div
+          data-sal="slide-up"
+          data-sal-duration="500"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+          className="relative flex flex-col md:flex-row w-full h-[500px] overflow-hidden"
+        >
           <div className="w-full md:h-[315px] md:w-1 bg-[#f3f7fd]">
             <div
               ref={scrollRef}

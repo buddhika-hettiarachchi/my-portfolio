@@ -41,7 +41,10 @@ export default function () {
             Let's Build Something Amazing!
             </div>
           </div>
-          <div>
+          <div data-sal="slide-up"
+            data-sal-duration="500"
+            data-sal-delay="100"
+            data-sal-easing="ease">
             <div class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl lg:max-w-3xl">
               <h1 class="text-2xl font-medium">Contact Me</h1>
               <EmailContactForm></EmailContactForm>

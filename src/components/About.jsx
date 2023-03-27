@@ -16,7 +16,10 @@ const About = () => {
               Hello! I am Buddhika.
             </div>
           </div>
-          <div className=" flex flex-col-reverse lg:flex-row ">
+          <div  data-sal="slide-up"
+          data-sal-duration="500"
+          data-sal-delay="100"
+          data-sal-easing="ease" className=" flex flex-col-reverse lg:flex-row ">
             <div className="flex-1">
               <div className="group w-1/2 m-auto lg:w-5/6 lg:ml-auto relative">
                 <StaticImage
